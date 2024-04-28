@@ -64,6 +64,7 @@ App.post("/login", async (req, res) =>{
         const checkUser = await collection.findOne({name: req.body.username});
 
         if(!checkUser){
+            // Uma melhor prática seria re-renderizar a página de registro com uma mensagem de erro. Isso pode ser feito usando o sistema de templates do seu servidor (como EJS, Pug, Handlebars, etc.)
             res.send('<script>alert("Usuario não encontrado"); window.location.href="/login";</script>');
         }
         // comparando senha
