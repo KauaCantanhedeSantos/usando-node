@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEV'School - Login</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/login.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="image">
+            <img src="/image-ilustrator.png" alt="Imagem de ilustração" srcset="/image-ilustrator.png">
+        </div>
+        
+
+        <div class="form">
+            <form action="/login" method="post">
+                <h2 class="title-form">&lt;DEV<span>'</span>School<span>/</span>&gt;</h2>
+                
+                <div class="form-inputs">
+                    <div class="row">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="username" placeholder="Usuário" id="username" required>
+                    </div>
+                    <div class="row">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="password" placeholder="Senha" id="password" required>
+                    </div>
+
+                    <div class="row-options">   
+                        <a href="/forget">Esqueci minha senha</a>
+                        <a href="/register">Não tenho cadastro</a>
+                    </div>
+
+                </div>
+                
+                <div class="btn">
+                    <button type="submit" class="submit-btn"> 
+                        <i class="fa-solid fa-arrow-right-to-bracket"></i>  
+                        <span>Entrar</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
